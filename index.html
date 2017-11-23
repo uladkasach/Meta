@@ -1,92 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="_utils/module_managment.js"></script>
         <script src="_lib/markdown.js"></script>
         <script>
-            // file:///var/www/git/uladkasach.github.io/index.html - while we dont need a server this is usefull for the developer
-
-            window["markdown_util"] = markdown; // give a different name to the markdown utility, explicitly use window["..."] to make it clear that this is a global variable
-
             window.promise_to_load = new Promise((resolve, reject)=>{ // create a promise that resolvs on window load
                 window.addEventListener("load", function(){
                     resolve(true);
                 })
             })
-
-
         </script>
-
     </head>
     <body>
 
     <script>
+        // upon loading page, render hidden markdown content
         window.promise_to_load
             .then(()=>{ // parse markdown and display it
                 var markdown = document.querySelector("#markdown_source").innerHTML; // grab the markdown
-                var html = window["markdown_util"].toHTML(markdown); //convert markdown to html
-                console.log(html);
+                var html = window["markdown"].toHTML(markdown); //convert markdown to html
                 document.querySelector("#markdown_display").innerHTML = html;
             })
     </script>
 
     <div id = 'markdown_display'></div>
-    <div style = 'display:none' id = 'markdown_source'>
-# CV
-uladkasach.github.io/_resources/CV_UladKasach.pdf
-
-## Papers
-#### Published:
-http://iopscience.iop.org/article/10.1088/1758-5090/aa6ed4
-- uladkasach.github.io/_resources/Cellular_Modeling.pdf
-
-#### Non-published Research
-- https://github.com/uladkasach/Word-Subject-Classification/blob/master/SemanticSubjectRecognition_FinalDraft.pdf
-
-
-#### Academic Reports
-##### Physics
-https://github.com/uladkasach/Academic/blob/master/Physics/Phys401/reflection_and_refraction/PhysOpticsLabOne__manual_refs_%20(1).pdf
-https://github.com/uladkasach/Academic/blob/master/Physics/Phys401/lens_systems/PhysOpticsLabTwo_Hardocded_refs.pdf
-https://github.com/uladkasach/Academic/blob/master/Physics/Phys401/polarization/PhysOpticsLabThree.pdf
-https://github.com/uladkasach/Academic/blob/master/Physics/Phys353/Phys353_LRC_Circuits_Report.pdf
-https://github.com/uladkasach/Academic/blob/master/Physics/Phys353/Phys353_OpAmp_Report.pdf
-https://github.com/uladkasach/Academic/blob/master/Physics/Phys353/Phys353_Photoelectric_Report.pdf
-
-# Resume
-https://www.linkedin.com/in/uladkasach/
-
-## Code
-#### Open Source
-##### NLP
-https://github.com/uladkasach/Writing-Evaluation
-https://github.com/uladkasach/Word-Subject-Classification
-
-##### STEM
-https://github.com/uladkasach/Measure-Voltage
-https://github.com/uladkasach/Finite-Capacitance
-
-##### Software
-https://github.com/uladkasach/openhim-cert-updater
-https://github.com/uladkasach/node-shipping-endicia
-https://github.com/uladkasach/PhotoBySMS
-https://github.com/uladkasach/Hotel-Reviews-Scraper
-
-#####
-More: https://github.com/uladkasach?tab=repositories
-
-#### Closed source
-Ahbode.com
-BornToRetire.com (cofounder)
-ShrewdShipper.com
-CarlosOboe.com
-PhotoSched.com
-BeachTimeAuctions.com
-SunLogs.com
-etc
-
-## Other
-Duplex Renovation
-
-Duplex Aquisition
-
-    </div>
