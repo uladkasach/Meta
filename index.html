@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="_utils/module_managment.js"></script>
-        <script src="_lib/markdown.js"></script>
-        <script>
-            window.promise_to_load = new Promise((resolve, reject)=>{ // create a promise that resolvs on window load
-                window.addEventListener("load", function(){
-                    resolve(true);
-                })
+<head>
+    <script src="_utils/module_managment.js"></script>
+    <script src="_lib/markdown.js"></script>
+    <script>
+        window.promise_to_load = new Promise((resolve, reject)=>{ // create a promise that resolvs on window load
+            window.addEventListener("load", function(){
+                resolve(true);
             })
-        </script>
-    </head>
-    <body>
+        })
+    </script>
+</head>
+<body>
 
     <script>
-        // upon loading page, render hidden markdown content
-        window.promise_to_load
-            .then(()=>{ // parse markdown and display it
-                var markdown = document.querySelector("#markdown_source").innerHTML; // grab the markdown
-                var html = window["markdown"].toHTML(markdown); //convert markdown to html
-                document.querySelector("#markdown_display").innerHTML = html;
-            })
+        // promise to load markdown content and display it
+        var markdown_source_and_destination = [ // source file path and destination element id
+            ["/markdown/research.md", "#research_content"]
+        ];
+        var content_display_promises = [];
+        for(var i = 0; i < markdown_source_and_destination.length; i++){
+            let this_set = markdown_source_and_destination[i];
+            let this_source = this_set[0];
+            let this_dest = this_set[1];
+            let promise_to_load_markdown = _module_managment.promise_to_get_content_from_file(this_source);
+            let promise_to_display_content = Promise.all([window.promise_to_load, promise_to_load_markdown, this_dest])
+                .then((data_array)=>{
+                    let markdown = data_array[1];
+                    let destination_query = data_array[2];
+                    let html = window["markdown"].toHTML(markdown); //convert markdown to html
+                    document.querySelector(destination_query).innerHTML = html;
+                })
+            content_display_promises.push(promise_to_display_content);
+        }
+        Promise.all(content_display_promises)
+            .then(()=>{console.log("all loaded");});
+
     </script>
 
-    <div id = 'markdown_display'></div>
+    <div id = 'research_content'></div>
+</body>
+</html>
