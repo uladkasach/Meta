@@ -1,8 +1,8 @@
 img[alt=pdf_preview] { max-width: 200px; max-height:250px; } /* restricts images w/ tag pdf_preview to a reasonable preview size*/
 
 
+
 .paper_preview {
     text-align:center;
     padding:5px;
-
 }
