@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="_utils/module_managment.js"></script>
-    <script src="_lib/markdown.js"></script>
+    <link rel="stylesheet" href="/_resources/global.css">
+    <script src="/_utils/module_managment.js"></script>
+    <script src="/_lib/markdown.js"></script>
     <script>
         window.promise_to_load = new Promise((resolve, reject)=>{ // create a promise that resolvs on window load
             window.addEventListener("load", function(){
@@ -10,10 +11,10 @@
             })
         })
     </script>
-</head>
-<body>
-
     <script>
+        /////////////////////////////////////////////////////////////
+        // This <script> chunk handles all of the functionality used to source and render the markdown that is displayed on the page
+        /////////////////////////////////////////////////////////////
         // promise to load markdown content and display it
         var markdown_source_and_destination = [ // source file path and destination element id
             ["/markdown/research.md", "#research_content"]
@@ -35,9 +36,11 @@
         }
         Promise.all(content_display_promises)
             .then(()=>{console.log("all loaded");});
-
     </script>
+</head>
+<body>
 
     <div id = 'research_content'></div>
+    
 </body>
 </html>
