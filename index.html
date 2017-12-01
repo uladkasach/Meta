@@ -12,35 +12,45 @@
         })
     </script>
     <script>
-        /////////////////////////////////////////////////////////////
-        // This <script> chunk handles all of the functionality used to source and render the markdown that is displayed on the page
-        /////////////////////////////////////////////////////////////
-        // promise to load markdown content and display it
-        var markdown_source_and_destination = [ // source file path and destination element id
-            ["/markdown/research.md", "#research_content"]
-        ];
-        var content_display_promises = [];
-        for(var i = 0; i < markdown_source_and_destination.length; i++){
-            let this_set = markdown_source_and_destination[i];
-            let this_source = this_set[0];
-            let this_dest = this_set[1];
-            let promise_to_load_markdown = _module_managment.promise_to_get_content_from_file(this_source);
-            let promise_to_display_content = Promise.all([window.promise_to_load, promise_to_load_markdown, this_dest])
-                .then((data_array)=>{
-                    let markdown = data_array[1];
-                    let destination_query = data_array[2];
-                    let html = window["markdown"].toHTML(markdown); //convert markdown to html
-                    document.querySelector(destination_query).innerHTML = html;
-                })
-            content_display_promises.push(promise_to_display_content);
-        }
-        Promise.all(content_display_promises)
-            .then(()=>{console.log("all loaded");});
+
+
+        var markdown_source_and_destination_array = [ // source file path and destination element id
+            // ["/_markdown/research.md", "#research_content"],
+            ["/_markdown/documents/CV.md", "#CV"],
+            ["/_markdown/documents/Cellular_Modeling.md", "#CM"],
+            ["/_markdown/documents/Semantic_Subject_Recognition.md", "#SSR"],
+            ["/_markdown/documents/Phys_Lab_Reflection_and_Refraction.md", "#PL_RandR"],
+            ["/_markdown/documents/Phys_Lab_Lenses_and_Lens_Systems.md", "#PL_LandL"],
+            ["/_markdown/documents/Phys_Lab_Polarization.md", "#PL_P"],
+            ["/_markdown/documents/Phys_Lab_RLC_Circuits.md", "#PL_RLC"],
+            ["/_markdown/documents/Phys_Lab_OpAmp.md", "#PL_OA"],
+            ["/_markdown/documents/Phys_Lab_Photoelectric.md", "#PL_PE"],
+        ]
+
+
+        // render markdown content
+        var promise_markdown_injector = _module_managment.promise_to_load_script_into_window("/_utils/markdown_injector.js");
+        promise_markdown_injector
+            .then(()=>{
+                return _markdown_injector.promise_to_inject(markdown_source_and_destination_array);
+            })
+
     </script>
 </head>
 <body>
+    <style>
+    </style>
 
-    <div id = 'research_content'></div>
-    
+    <div id = 'paper_carousel' style = 'display:flex;'>
+        <div id = 'CV' class = 'paper_preview' ></div>
+        <div id = 'CM' class = 'paper_preview' ></div>
+        <div id = 'SSR' class = 'paper_preview' ></div>
+        <div id = 'PL_LandL' class = 'paper_preview' ></div>
+        <div id = 'PL_RandR' class = 'paper_preview' ></div>
+        <div id = 'PL_P' class = 'paper_preview' ></div>
+        <div id = 'PL_RLC' class = 'paper_preview' ></div>
+        <div id = 'PL_OA' class = 'paper_preview' ></div>
+        <div id = 'PL_PE' class = 'paper_preview' ></div>
+    </div>
 </body>
 </html>
