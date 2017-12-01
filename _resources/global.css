@@ -3,5 +3,6 @@ img[alt=pdf_preview] { max-width: 200px; max-height:250px; } /* restricts images
 
 .paper_preview {
     text-align:center;
-    width:200px;
+    padding:5px;
+
 }
