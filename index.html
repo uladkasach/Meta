@@ -14,9 +14,8 @@
     </script>
     <script>
 
-
         var markdown_source_and_destination_array = [ // source file path and destination element id
-            // ["/_markdown/research.md", "#research_content"],
+            // papers
             ["/_markdown/documents/CV.md", "#CV"],
             ["/_markdown/documents/Cellular_Modeling.md", "#CM"],
             ["/_markdown/documents/Semantic_Subject_Recognition.md", "#SSR"],
@@ -26,8 +25,10 @@
             ["/_markdown/documents/Phys_Lab_RLC_Circuits.md", "#PL_RLC"],
             ["/_markdown/documents/Phys_Lab_OpAmp.md", "#PL_OA"],
             ["/_markdown/documents/Phys_Lab_Photoelectric.md", "#PL_PE"],
-        ]
 
+            // research
+            ["/_markdown/research/covers/Cellular_Modeling.md", "#Cellular_Modeling"],
+        ]
 
         // render markdown content
         var promise_markdown_injector = _module_managment.promise_to_load_script_into_window("/_utils/markdown_injector.js");
@@ -42,7 +43,10 @@
     <style>
     </style>
 
-    <div id = 'paper_carousel' style = 'display:flex; overflow-x:scroll;'>
+    <div>
+        Papers:
+    </div>
+    <div class = 'content_carousel'>
         <div id = 'CV' class = 'paper_preview' ></div>
         <div id = 'CM' class = 'paper_preview' ></div>
         <div id = 'SSR' class = 'paper_preview' ></div>
@@ -52,6 +56,13 @@
         <div id = 'PL_RLC' class = 'paper_preview' ></div>
         <div id = 'PL_OA' class = 'paper_preview' ></div>
         <div id = 'PL_PE' class = 'paper_preview' ></div>
+    </div>
+
+    <div>
+        Research:
+    </div>
+    <div class = 'content_carousel'>
+        <div id = 'Cellular_Modeling' class = 'research_preview' ></div>
     </div>
 </body>
 </html>

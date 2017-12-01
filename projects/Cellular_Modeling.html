@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/_resources/global.css">
+    <script src="/_utils/module_managment.js"></script>
+    <script src="/_lib/markdown.js"></script>
+    <script>
+        var markdown_source_and_destination_array = [
+            ["/_markdown/research/Cellular_Modeling.md", "#Cellular_Modeling"],
+        ]
+        // render markdown content
+        var promise_markdown_injector = _module_managment.promise_to_load_script_into_window("/_utils/markdown_injector.js");
+        promise_markdown_injector
+            .then(()=>{
+                return _markdown_injector.promise_to_inject(markdown_source_and_destination_array);
+            })
+
+    </script>
+</head>
+<body>
+
+    <div id = 'Cellular_Modeling'></div>
+</body>
+</html>

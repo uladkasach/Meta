@@ -4,7 +4,7 @@
 
 ## Papers
 #### Published
-- [A heuristic computational model of basic cellular processes and oxygenation during spheroid-dependent biofabrication][Cellular_Modeling_Link]
+- 
     -
 
 #### Non-published Research

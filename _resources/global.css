@@ -1,8 +1,13 @@
 img[alt=pdf_preview] { max-width: 200px; max-height:250px; } /* restricts images w/ tag pdf_preview to a reasonable preview size*/
+img[alt=research_cover],img[alt=research_gif]  { max-width: 300px; max-height:300px; } /* restricts images w/ tag pdf_preview to a reasonable preview size*/
 
 
 
-.paper_preview {
+.paper_preview, .research_preview {
     text-align:center;
     padding:5px;
+}
+
+.content_carousel{
+    display:flex; overflow-x:scroll;
 }
