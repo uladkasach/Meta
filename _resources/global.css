@@ -1,6 +1,17 @@
+/* define font */
+
+@import url('https://fonts.googleapis.com/css?family=Rokkitt:300|Spectral+SC'); /* import fonts */
+html{ font-size:21px; font-family: 'Rokkitt', serif; } /* define base font and size */
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Spectral SC', serif;
+}
+
+
+/* other */
+
 img[alt=pdf_preview] { max-width: 200px; max-height:250px; } /* restricts images w/ tag pdf_preview to a reasonable preview size*/
 img[alt=research_cover],img[alt=research_gif]  { max-width: 300px; max-height:300px; } /* restricts images w/ tag pdf_preview to a reasonable preview size*/
-
 
 
 .paper_preview, .research_preview {

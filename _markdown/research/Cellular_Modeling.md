@@ -4,7 +4,7 @@ The goal of this project was to simulate cellular development for the purpose of
 
 At a high level, the goal is to predict whether certain configurations would lead to successful constructs through a scaffold-free biofabrication technique. In other words, we wanted to make sure that the cells in the construct will 1. successfully construct the target structure after fusion and 2. survive the fabrication process in light of metabolic limitations (lack of oxygen, too much lactic acid, etc).
 
-The main innovation that this work produced was the incorporation of metabolic processes and cell-environment interactions during the simulation. It is certain that simulations such as the one created for this project will be critical in biofabrication - in the very least this project demonstrates that modeling cell-environment interactions is possible and computationally feasible.
+The main innovation that this work produced was the incorporation of metabolic processes and cell-environment interactions during the simulation. It is certain that simulations, like the one created in this project, will be critical in biofabrication - in the very least this project demonstrates that modeling cell-environment interactions is possible and computationally feasible.
 
 ## Publication
 This research resulted in a publication of this work that does an excellent job summarizing the most completed aspects of the simulation software and its capabilities. It was published in the Journal of Biofabrication under the title: [A heuristic computational model of basic cellular processes and oxygenation during spheroid-dependent biofabrication][Cellular_Modeling_Link]
@@ -29,7 +29,7 @@ Through these descriptions the simulation was able to demonstrate the phenomena 
 
 
 ## Involvement
-My involvement with this project started by being recommended by Dr Tovar to Dr Moldovan, based on his experience with me as a researcher in a previous project. The project highly leveraged my strengths in the applied mathematics, developed from Physics, and in software development, developed from the endless hours I spend constantly programming: these strengths enabled a deep understanding the mathematics underlying the models and enabled a foresight in application structure for maintainability, scaling, and reusability.
+My involvement with this project started as i was recommended as a researcher to Dr. Moldovan by Dr. Tovar, based on his previous experience with me as a researcher. The project highly leveraged my strengths in the applied mathematics, developed from Physics, and in software development, developed from the endless hours I spend constantly programming: these strengths enabled a deep understanding the mathematics underlying the models and enabled a foresight in application structure for maintainability, scaling, and reusability.
 
 Primary responsibilities consisted of improving the simulation software from a software engineering perspective (maintainability, reusability, speed: enabling the simulation to start from previously completed states, separating the simulation processes from the result analysis processes, etc) and expanding the simulation capabilities for the goals of demonstrating real world phenomena captured by the model (attempts at calibrating model specific constants to real world values, monitoring the energy of the system throughout the simulation, etc).
 

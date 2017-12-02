@@ -1,7 +1,7 @@
 
 [![pdf_preview][CM_Preview]][Cellular Modeling Paper]
 
-A heuristic computational model of basic cellular processes and oxygenation during spheroid-dependent biofabrication
+A heuristic computational model of basic cellular processes and ...
 
 [CM_Preview]: /_material/research/Cellular_Modeling/Cellular_Modeling_Preview.png "A heuristic computational model of basic cellular processes and oxygenation during spheroid-dependent biofabrication"
 [Cellular Modeling Paper]: /_material/research/Cellular_Modeling/Cellular_Modeling.pdf
