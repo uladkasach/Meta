@@ -9,7 +9,7 @@ The main innovation that this work produced was the incorporation of metabolic p
 ## Publication
 This research resulted in a publication of this work that does an excellent job summarizing the most completed aspects of the simulation software and its capabilities. It was published in the Journal of Biofabrication under the title: [A heuristic computational model of basic cellular processes and oxygenation during spheroid-dependent biofabrication][Cellular_Modeling_Link]
 
-- [![pdf_preview][CM_Preview]][Cellular_Modeling_Link]
+[![pdf_preview][CM_Preview]][Cellular_Modeling_Link]
 
 ## Simulation Software
 
@@ -22,7 +22,8 @@ The simulation capably describes:
 
 Through these descriptions the simulation was able to demonstrate the phenomena of hole closure, spheroid fusion, and more:
 
-- ![research_gif][hole_closure] ![research_gif][fusion]
+![research_gif][hole_closure]
+![research_gif][fusion]
 
 
 
@@ -34,6 +35,10 @@ My involvement with this project started as i was recommended to Dr. Moldovan fo
 Primary responsibilities consisted of improving the simulation software from a software engineering perspective (maintainability, reusability, speed: enabling the simulation to start from previously completed states, separating the simulation processes from the result analysis processes, etc) and expanding the simulation capabilities for the goals of demonstrating real world phenomena captured by the model (attempts at calibrating model specific constants to real world values, monitoring the energy of the system throughout the simulation, etc).
 
 Throughout the project I focused on having a clear understanding of the big picture of the project: understanding why the work we were doing was relevant, what paths would be most effective in progressing the state of simulations in biofabrication at the time, and what the simulation needs to be capable of describing in order to be impactful.
+
+![research_gif][IUURC_22_pic1]
+![research_gif][IUURC_22_pic2]
+
 
 ## Take-Aways
 1. Research is exhilarating. Research tackles problems that have not yet been solved: progressing the state of the art in the world and setting you at a position where all possibilities are yet to be explored. The research I had conducted with Dr. Tovar previously had demonstrated that the work patterns required in research resonated with my work processes; this experience brought to light the accessibility of working on research which is incredibly impactful.  
@@ -56,3 +61,6 @@ Throughout the project I focused on having a clear understanding of the big pict
 
 [hole_closure]: /_material/research/Cellular_Modeling/hole_closure_100s.gif
 [fusion]: /_material/research/Cellular_Modeling/fusion_test.gif
+
+[IUURC_22_pic1]: /_material/research/Cellular_Modeling/IUURC_22_p1.JPG "Daniel (left) and I in front of our poster"
+[IUURC_22_pic2]: /_material/research/Cellular_Modeling/IUURC_22_p2.JPG "T.J. (left), Daniel (hidden), and I discussing the next steps for our research"

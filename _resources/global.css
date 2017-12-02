@@ -14,11 +14,32 @@ img[alt=pdf_preview] { max-width: 200px; max-height:250px; } /* restricts images
 img[alt=research_cover],img[alt=research_gif]  { max-width: 300px; max-height:300px; } /* restricts images w/ tag pdf_preview to a reasonable preview size*/
 
 
-.paper_preview, .research_preview {
+.paper_preview, .reseach_preview {
+    display:flex;
+    flex-flow: column wrap;
     text-align:center;
-    padding:5px;
+    padding:0px 0px;
+    height:100%;
+    margin:5px;
+    outline: none;
+    cursor:pointer;
 }
 
-.content_carousel{
-    display:flex; overflow-x:scroll;
+.paper_preview:hover, .reseach_preview:hover {
+    color:#1E88E5;
+    cursor:pointer;
+}
+.paper_preview > p:nth-child(1), .reseach_preview > p:nth-child(1) {
+    border:1px solid white;
+    outline: none;
+}
+.paper_preview:hover > p:nth-child(1), .reseach_preview:hover > p:nth-child(1) {
+    border:1px solid #90CAF9;
+}
+
+.paper_preview > p:nth-child(2) {
+    margin:auto;
+    height:60px;
+    overflow:hidden;
+    max-width:175px;
 }

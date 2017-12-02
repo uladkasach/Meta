@@ -12,9 +12,6 @@
             })
         })
     </script>
-
-
-
     <script>
 
         var markdown_source_and_destination_array = [ // source file path and destination element id
@@ -35,12 +32,40 @@
 
         // render markdown content
         var promise_markdown_injector = _module_managment.promise_to_load_script_into_window("/_utils/markdown_injector.js");
-        promise_markdown_injector
+        var promise_to_load_content = promise_markdown_injector
             .then(()=>{
                 return _markdown_injector.promise_to_inject(markdown_source_and_destination_array);
             })
 
     </script>
+
+
+
+    <!-- carousel functionality -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/_lib/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/_lib/slick/slick-theme.css"/>
+    <script type="text/javascript" src="/_lib/slick/slick.min.js"></script>
+
+    <script>
+        // initilalize carousels
+        Promise.all([window.promise_to_load, promise_to_load_content])
+            .then(()=>{
+                $('.content_carousel').slick({
+                  dots: true,
+                  infinite: true,
+                  speed: 300,
+                  slidesToShow: 1,
+                  centerMode: false,
+                  variableWidth: true,
+                });
+            })
+    </script>
+
+
+
 </head>
 <body>
     <style>
@@ -50,7 +75,7 @@
         <h3>Papers:<h3>
     </div>
     <div style = 'margin-top:-15px;'></div>
-    <div class = 'content_carousel' style = 'font-size:16px;'>
+    <div class = 'content_carousel' style = 'font-size:15px; display:flex; position:relative;'>
         <div id = 'CV' class = 'paper_preview' ></div>
         <div id = 'CM' class = 'paper_preview' ></div>
         <div id = 'SSR' class = 'paper_preview' ></div>
@@ -62,13 +87,13 @@
         <div id = 'PL_PE' class = 'paper_preview' ></div>
     </div>
 
-
+    <div style ='height:15px;'></div>
     <div>
         <h3>Research:<h3>
     </div>
-    <div style = 'margin-top:-15px;'></div>
+    <div style = 'margin-top:-25px;'></div>
     <div class = 'content_carousel'>
-        <div id = 'Cellular_Modeling' class = 'research_preview' ></div>
+        <div id = 'Cellular_Modeling' class = 'paper_preview' ></div>
     </div>
 </body>
 </html>
