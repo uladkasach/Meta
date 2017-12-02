@@ -36,6 +36,9 @@
             .then(()=>{
                 return _markdown_injector.promise_to_inject(markdown_source_and_destination_array);
             })
+            .then(()=>{
+
+            })
 
     </script>
 
@@ -60,6 +63,7 @@
                   slidesToShow: 1,
                   centerMode: false,
                   variableWidth: true,
+                  arrows: false,
                 });
             })
     </script>
@@ -69,13 +73,16 @@
 </head>
 <body>
     <style>
+        .content_carousel{
+            max-width: 100%;
+        }
     </style>
 
     <div>
         <h3>Papers:<h3>
     </div>
     <div style = 'margin-top:-15px;'></div>
-    <div class = 'content_carousel' style = 'font-size:15px; display:flex; position:relative;'>
+    <div class = 'content_carousel' style = 'font-size:15px; display:flex;  position:relative; '>
         <div id = 'CV' class = 'paper_preview' ></div>
         <div id = 'CM' class = 'paper_preview' ></div>
         <div id = 'SSR' class = 'paper_preview' ></div>
@@ -93,7 +100,7 @@
     </div>
     <div style = 'margin-top:-25px;'></div>
     <div class = 'content_carousel'>
-        <div id = 'Cellular_Modeling' class = 'paper_preview' ></div>
+        <div id = 'Cellular_Modeling' class = 'reseach_preview' ></div>
     </div>
 </body>
 </html>

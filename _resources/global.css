@@ -33,7 +33,7 @@ img[alt=research_cover],img[alt=research_gif]  { max-width: 300px; max-height:30
     border:1px solid white;
     outline: none;
 }
-.paper_preview:hover > p:nth-child(1), .reseach_preview:hover > p:nth-child(1) {
+.paper_preview:hover > p:nth-child(1){
     border:1px solid #90CAF9;
 }
 
