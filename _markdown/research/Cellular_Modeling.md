@@ -9,7 +9,7 @@ The main innovation that this work produced was the incorporation of metabolic p
 ## Publication
 This research resulted in a publication of this work that does an excellent job summarizing the most completed aspects of the simulation software and its capabilities. It was published in the Journal of Biofabrication under the title: [A heuristic computational model of basic cellular processes and oxygenation during spheroid-dependent biofabrication][Cellular_Modeling_Link]
 
-- [![pdf_preview][CM_Preview]][Cellular Modeling Paper]
+- [![pdf_preview][CM_Preview]][Cellular_Modeling_Link]
 
 ## Simulation Software
 
