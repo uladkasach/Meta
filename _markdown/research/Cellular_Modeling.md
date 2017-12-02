@@ -29,7 +29,7 @@ Through these descriptions the simulation was able to demonstrate the phenomena 
 
 
 ## Involvement
-My involvement with this project started as i was recommended as a researcher to Dr. Moldovan by Dr. Tovar, based on his previous experience with me as a researcher. The project highly leveraged my strengths in the applied mathematics, developed from Physics, and in software development, developed from the endless hours I spend constantly programming: these strengths enabled a deep understanding the mathematics underlying the models and enabled a foresight in application structure for maintainability, scaling, and reusability.
+My involvement with this project started as i was recommended to Dr. Moldovan for this project by Dr. Tovar, based on his previous experience with me as a researcher. The project highly leveraged my strengths in the applied mathematics, developed from Physics, and in software development, developed from the endless hours I spend constantly programming: these strengths enabled a deep understanding the mathematics underlying the models and enabled a foresight in application structure for maintainability, scaling, and reusability.
 
 Primary responsibilities consisted of improving the simulation software from a software engineering perspective (maintainability, reusability, speed: enabling the simulation to start from previously completed states, separating the simulation processes from the result analysis processes, etc) and expanding the simulation capabilities for the goals of demonstrating real world phenomena captured by the model (attempts at calibrating model specific constants to real world values, monitoring the energy of the system throughout the simulation, etc).
 

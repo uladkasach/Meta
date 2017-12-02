@@ -15,6 +15,25 @@
             .then(()=>{
                 return _markdown_injector.promise_to_inject(markdown_source_and_destination_array);
             })
+            .then(()=>{
+                // for all headings (h1, h2, h3) append element.id = "innerHTML".split().join("_").toLowerCase();
+                document.querySelectorAll("h1, h2, h3, h4, h5")
+                    .forEach((element)=>{
+                        var tag = element.innerHTML.split(" ").join("_").toLowerCase()
+                        element.id = tag;
+                        console.log(tag);
+                    })
+            })
+            .then(()=>{
+                // check if url requested scrolling to the content
+                var url_parts = window.location.href.split("#");
+                if(url_parts.length == 1) return; // no id was requested
+                var requested_id = url_parts[1];
+                document.getElementById(requested_id).scrollIntoView(true);
+            })
+            .then(()=>{
+                window.scrollBy(0, -80); 
+            })
 
     </script>
 </head>
