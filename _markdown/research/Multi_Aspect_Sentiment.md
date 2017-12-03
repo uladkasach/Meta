@@ -4,16 +4,12 @@ This project was lead by [Dr. Hasan][hasan_homepage] and funded by an NSF grant 
 
 This project was concerned with predicting sentiment over multiple aspects in a review. The project specifically trained on and tested on the domain of hotel reviews. Raw text reviews were converted into representations that can be utilized to both evaluate which aspects the review is talking about and predict the sentiment expressed about each aspect in the review. Hotel reviews scraped from the website TripAdvisor.com were utilized for supervised learning, predicting sentiment for each aspect based on the representations, and evaluation of the feature representations that were created.
 
+The project consisted of three fundamental tasks, namely: Data Acquisition, Feature Engineering, and Validation.
+
 The following is an example of the multi-aspect nature of reviews:
 
 ![reference_image][multi_aspect_nature]
 
-The project consisted of three fundamental tasks, namely:
-
-1. **Data Aquisition**: Retrieving hotel reviews with multi-aspect ratings from online sources
-    - Must have both full review text and ratings for distinct aspects
-2. **Feature Engineering**: Converting raw text reviews into representations which capture information useful for discriminating aspects present in the review and the sentiment for each aspect
-3. **Validation**: Evaluating the capability of these representations to discriminate the sentiment present in a review for each aspect
 
 ## Involvement
 
