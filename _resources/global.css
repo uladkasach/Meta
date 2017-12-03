@@ -30,7 +30,7 @@ img[alt=research_cover]{max-width:300px; height:300px; -o-object-fit: contain; }
 
 
 
-
+.content_carousel{ display:flex;}
 .content_carousel a{
     color:inherit;  text-decoration: none;
 }
