@@ -3,17 +3,37 @@
 @import url('https://fonts.googleapis.com/css?family=Rokkitt:300|Spectral+SC'); /* import fonts */
 html{ font-size:21px; font-family: 'Rokkitt', serif; } /* define base font and size */
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Spectral SC', serif;
 }
 
+/* redefine h6 */
+h6{
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: underline;
+}
 
 /* other */
 
 img[alt=pdf_preview] { max-width: 200px; max-height:250px; } /* restricts images w/ tag pdf_preview to a reasonable preview size*/
-img[alt=research_cover],img[alt=research_gif]  { max-width: 300px; max-height:300px; } /* restricts images w/ tag pdf_preview to a reasonable preview size*/
+img[alt=research_gif]  { max-width: 300px; max-height:300px; }
+img[alt=research_gif_larger] { max-width: 500px; max-height:550px; }
+img[alt=reference_image]{max-width:100%;}
+img[alt=research_cover]{max-width:300px; height:300px; -o-object-fit: contain; }
 
 
+
+
+.content_carousel a{
+    color:inherit;  text-decoration: none;
+}
 .paper_preview, .reseach_preview {
     display:flex;
     flex-flow: column wrap;

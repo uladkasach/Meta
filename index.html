@@ -28,6 +28,7 @@
 
             // research
             ["/_markdown/research/covers/Cellular_Modeling.md", "#Cellular_Modeling"],
+            ["/_markdown/research/covers/Multi_Aspect_Sentiment.md", "#Multi_Aspect_Sentiment"],
         ]
 
         // render markdown content
@@ -37,7 +38,12 @@
                 return _markdown_injector.promise_to_inject(markdown_source_and_destination_array);
             })
             .then(()=>{
-
+                document.querySelectorAll(".content_carousel > a")
+                    .forEach((element)=>{
+                        // get href of anchor, append href to this element
+                        var href = element.querySelector("a").href;
+                        element.href = href;
+                    })
             })
 
     </script>
@@ -58,7 +64,7 @@
             .then(()=>{
                 $('.content_carousel').slick({
                   dots: true,
-                  infinite: true,
+                  infinite: false,
                   speed: 300,
                   slidesToShow: 1,
                   centerMode: false,
@@ -82,16 +88,16 @@
         <h3>Papers:<h3>
     </div>
     <div style = 'margin-top:-15px;'></div>
-    <div class = 'content_carousel' style = 'font-size:15px; display:flex;  position:relative; '>
-        <div id = 'CV' class = 'paper_preview' ></div>
-        <div id = 'CM' class = 'paper_preview' ></div>
-        <div id = 'SSR' class = 'paper_preview' ></div>
-        <div id = 'PL_LandL' class = 'paper_preview' ></div>
-        <div id = 'PL_RandR' class = 'paper_preview' ></div>
-        <div id = 'PL_P' class = 'paper_preview' ></div>
-        <div id = 'PL_RLC' class = 'paper_preview' ></div>
-        <div id = 'PL_OA' class = 'paper_preview' ></div>
-        <div id = 'PL_PE' class = 'paper_preview' ></div>
+    <div class = 'content_carousel' style = 'font-size:15px;'>
+        <a id = 'CV' class = 'paper_preview' ></a>
+        <a id = 'CM' class = 'paper_preview' ></a>
+        <a id = 'SSR' class = 'paper_preview' ></a>
+        <a id = 'PL_LandL' class = 'paper_preview' ></a>
+        <a id = 'PL_RandR' class = 'paper_preview' ></a>
+        <a id = 'PL_P' class = 'paper_preview' ></a>
+        <a id = 'PL_RLC' class = 'paper_preview' ></a>
+        <a id = 'PL_OA' class = 'paper_preview' ></a>
+        <a id = 'PL_PE' class = 'paper_preview' ></a>
     </div>
 
     <div style ='height:15px;'></div>
@@ -99,8 +105,9 @@
         <h3>Research:<h3>
     </div>
     <div style = 'margin-top:-25px;'></div>
-    <div class = 'content_carousel'>
-        <div id = 'Cellular_Modeling' class = 'reseach_preview' ></div>
+    <div class = 'content_carousel' style = 'font-size:18px;'>
+        <a id = 'Multi_Aspect_Sentiment' class = 'reseach_preview' ></a>
+        <a id = 'Cellular_Modeling' class = 'reseach_preview' ></a>
     </div>
 </body>
 </html>

@@ -6,8 +6,18 @@
     <script src="/_utils/module_managment.js"></script>
     <script src="/_lib/markdown.js"></script>
     <script>
+        var selection_parts = window.location.href.split("/");
+        var selection = selection_parts[selection_parts.length-1].toLowerCase();
+        var defined_selections = {
+            "404" : "/_resources/error/404.md",
+            "cellular_modeling" : "/_markdown/research/Cellular_Modeling.md",
+            "multi_aspect_sentiment" : "/_markdown/research/Multi_Aspect_Sentiment.md",
+        }
+        var selection_path = defined_selections[selection]
+        if(typeof selection_path == "undefined") selection_path = defined_selections["404"];
+
         var markdown_source_and_destination_array = [
-            ["/_markdown/research/Cellular_Modeling.md", "#Cellular_Modeling"],
+            [selection_path, "#content_holder"],
         ]
         // render markdown content
         var promise_markdown_injector = _module_managment.promise_to_load_script_into_window("/_utils/markdown_injector.js");
@@ -32,14 +42,14 @@
                 document.getElementById(requested_id).scrollIntoView(true);
             })
             .then(()=>{
-                window.scrollBy(0, -80); 
+                window.scrollBy(0, -80);
             })
 
     </script>
 </head>
 <body>
     <div style = 'display:flex;>'>
-        <div id = 'Cellular_Modeling' style = 'max-width:700px; margin:auto;'></div>
+        <div id = 'content_holder' style = 'max-width:700px; margin:auto;'></div>
     </div>
 </body>
 </html>

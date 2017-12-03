@@ -3,4 +3,4 @@
 Cellular Modeling
 
 [CM_Preview]: /_material/research/Cellular_Modeling/fusion_test.gif
-[path_to_description]: /projects/Cellular_Modeling.html
+[path_to_description]: /projects/cellular_modeling

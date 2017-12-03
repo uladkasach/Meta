@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteBase /
+
+# NOTE - htaccess can be cached.
+# Options -Indexes
+
+# ErrorDocument 404     /0_global/40_/404/index.php
+# ErrorDocument 403     /0_global/40_/403/index.php
+
+##########################################################
+##MISSION CRITICAL########################################
+##########################################################
+RewriteRule ^projects/Cellular_Modeling.html projects/cellular_modeling [R=301,L]
+RewriteRule ^projects/(.+)$ /markdown_page_displayer.html?$1 [NC]
