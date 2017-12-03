@@ -2,5 +2,5 @@
 
 Cellular Modeling
 
-[CM_Preview]: /_material/research/Cellular_Modeling/fusion_test.gif
+[CM_Preview]: /_material/research/Cellular_Modeling/cover.gif
 [path_to_description]: /projects/cellular_modeling
