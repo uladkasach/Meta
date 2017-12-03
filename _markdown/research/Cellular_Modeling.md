@@ -1,5 +1,7 @@
 # Cellular Modeling
 
+This project was lead by [Dr. Moldovan][moldovan_home] and [Dr. Tovar][tovar_home] under a [MURI][muri_desc] grant. The research was spearheaded as part of T.J. Sego's PhD candidacy research. The project ran from August 2016 through May 2017.
+
 The goal of this project was to simulate cellular development for the purpose of predicting the product of 3D biofabrication attempts.
 
 At a high level, the goal is to predict whether certain configurations would lead to successful constructs through a scaffold-free biofabrication technique. In other words, we wanted to make sure that the cells in the construct will 1. successfully construct the target structure after fusion and 2. survive the fabrication process in light of metabolic limitations (lack of oxygen, too much lactic acid, etc).
@@ -64,3 +66,7 @@ Throughout the project I focused on having a clear understanding of the big pict
 
 [IUURC_22_pic1]: /_material/research/Cellular_Modeling/IUURC_22_p1.JPG "Daniel (left) and I in front of our poster"
 [IUURC_22_pic2]: /_material/research/Cellular_Modeling/IUURC_22_p2.JPG "T.J. (left), Daniel (hidden), and I discussing the next steps for our research"
+
+[tovar_home]: http://www.engr.iupui.edu/~tovara/
+[moldovan_home]: https://medicine.iu.edu/departments/ophthalmology/faculty/26152/moldovan-nicanor/
+[muri_desc]: https://crl.iupui.edu/crlprograms/facultyprograms/muriprojectawards/index.html

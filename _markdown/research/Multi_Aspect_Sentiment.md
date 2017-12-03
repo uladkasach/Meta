@@ -1,6 +1,6 @@
 # Multi-Aspect Sentiment Analysis of Hotel Reviews
 
-This project was lead by [Dr. Hasan][hasan_homepage] and funded by an NSF grant as an [REU project][reu_project_homepage].
+This project was lead by [Dr. Hasan][hasan_homepage] and funded by an NSF grant as an [REU project][reu_project_homepage]. The project ran from June to August 2017.
 
 This project was concerned with predicting sentiment over multiple aspects in a review. The project specifically trained on and tested on the domain of hotel reviews. Raw text reviews were converted into representations that can be utilized to both evaluate which aspects the review is talking about and predict the sentiment expressed about each aspect in the review. Hotel reviews scraped from the website TripAdvisor.com were utilized for supervised learning, predicting sentiment for each aspect based on the representations, and evaluation of the feature representations that were created.
 
