@@ -13,6 +13,7 @@
             "cellular_modeling" : "/_markdown/research/Cellular_Modeling.md",
             "multi_aspect_sentiment" : "/_markdown/research/Multi_Aspect_Sentiment.md",
             "recycled_filament" : "/_markdown/research/Recycled_Filament.md",
+            "side_67_reno" : "/_markdown/other/Side_67_Reno.md",
         }
         var selection_path = defined_selections[selection]
         if(typeof selection_path == "undefined") selection_path = defined_selections["404"];
@@ -41,9 +42,17 @@
                 if(url_parts.length == 1) return; // no id was requested
                 var requested_id = url_parts[1];
                 document.getElementById(requested_id).scrollIntoView(true);
+                window.scrollBy(0, -80);
             })
             .then(()=>{
-                window.scrollBy(0, -80);
+                // check if we attempted to add any html
+                document.querySelectorAll("p")
+                    .forEach((element)=>{
+                        if(element.textContent.substring(0,1) == "<"){
+                            console.log(element)
+                            element.innerHTML = element.textContent;
+                        }
+                    })
             })
 
     </script>

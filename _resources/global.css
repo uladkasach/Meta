@@ -50,6 +50,7 @@ img[alt=research_cover]{max-width:300px; height:300px; -o-object-fit: contain; }
     cursor:pointer;
 }
 .paper_preview > p:nth-child(1), .reseach_preview > p:nth-child(1) {
+    cursor:pointer;
     border:1px solid white;
     outline: none;
 }
