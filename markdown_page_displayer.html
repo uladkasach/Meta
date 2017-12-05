@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/png" href="/_resources/ebrain.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/_resources/global.css">
     <script src="/_utils/module_managment.js"></script>
@@ -53,6 +54,11 @@
                             element.innerHTML = element.textContent;
                         }
                     })
+            })
+            .then(()=>{
+                // add title to page
+                var title = document.querySelector("h1").textContent;
+                document.title = "Kasach - " + title;
             })
 
     </script>

@@ -8,7 +8,9 @@ As summer started and progressed the plan was quickly reduced in scope to simply
 
 Ever grateful for the help of my wonderful mother in this period. It would not have been capable to wrap everything up without her.
 
-Here are a few snippets from the experience:
+Thank you to my friend Artem for his help as well.
+
+##Here are a few snippets from the experience:
 
 
 Before... and After...
