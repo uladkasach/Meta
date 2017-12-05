@@ -10,10 +10,6 @@ Ever grateful for the help of my wonderful mother in this period. It would not h
 
 Here are a few snippets from the experience:
 
-![research_gif_larger][final]
-![research_gif_larger][closet]
-![research_gif_larger][tools]
-![research_gif_larger][mid]
 
 Before... and After...
 
@@ -22,6 +18,12 @@ Before... and After...
 <iframe width="630" height="356" src="https://www.youtube-nocookie.com/embed/zNsviEC0f8U" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 You may have noticed that some of the outlet covers are still missing. Don't worry, they were put on before the tenant fully moved in.
+
+
+![research_gif_larger][final]
+![research_gif_larger][closet]
+![research_gif_larger][tools]
+![research_gif_larger][mid]
 
 
 
