@@ -39,11 +39,11 @@ While this project had lots of room for improvement, in the end it was not furth
 
 ## Take-Aways
 
-At a high level this project imparted significant lessons in machine learning research "project managment". These lessons included the ability to assess what scope of projects were achievable as well as what my first dive into how to find projects in machine learning that will generate an impact or would be more interesting.
+1. At a high level this project imparted significant lessons in machine learning research "project management". These lessons included the ability to assess what scope of projects were achievable as well as what my first dive into how to find projects in machine learning that will generate an impact or would be more interesting.
 
-Through this project I learned countless machine learning techniques and methodologies, producing the first set of code that I would reuse in future projects for reference. I was able to utilize the common ML toolkits such as Tensorflow and Scikit and implemented proven algorithms such as SMOTE. The value of automating a machine learning pipeline for eventual gridsearching was also made clear.
+2. Through this project I learned countless machine learning techniques and methodologies, producing the first set of code that I would reuse in future projects for reference. I was able to utilize the common ML toolkits such as Tensorflow and Scikit and implemented proven algorithms such as SMOTE. The value of automating a machine learning pipeline for eventual grid searching was also made clear.
 
-This project demonstrated the challenges of dealing with big data as well. The google news pretrained vectors were multiple gigabytes in size and required both special hardware and premeditated software descisions to efficiently deal with the mass. 
+3. This project demonstrated the challenges of dealing with big data as well. The google news pretrained vectors were multiple gigabytes in size and required both special hardware and premeditated software decisions to efficiently deal with the mass.
 
 
 [dundar_homepage]: https://cs.iupui.edu/~dundar/index.htm
