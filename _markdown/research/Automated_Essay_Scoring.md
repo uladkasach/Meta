@@ -1,4 +1,4 @@
-# Classification of Words by Semantic Subject
+# Automated Essay Scoring
 
 This project is being conducted as part of my Research Assistantship under [Dr. Dundar][dundar_homepage], which started in fall of 2017.
 
