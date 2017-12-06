@@ -52,6 +52,12 @@
                         element.href = href;
                     })
             })
+            .then(()=>{
+                // ensure every anchor opens link in new tab
+                document.querySelectorAll("a").forEach((element)=>{
+                    element.target = "_blank";
+                });
+            })
 
     </script>
 

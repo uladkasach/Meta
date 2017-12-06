@@ -61,7 +61,23 @@
                 var title = document.querySelector("h1").textContent;
                 document.title = "Kasach - " + title;
             })
-
+            .then(()=>{
+                // make every image clickable: opening image in new tab (wrap image with anchor)
+                document.querySelectorAll("img").forEach((element)=>{
+                    var target = element;
+                    var wrap = document.createElement("a");
+                    wrap.href = target.src;
+                    wrap.target = "_blank";
+                    target.parentNode.replaceChild(wrap, target);
+                    wrap.appendChild(target);
+                });
+            })
+            .then(()=>{
+                // ensure every anchor opens link in new tab
+                document.querySelectorAll("a").forEach((element)=>{
+                    element.target = "_blank";
+                });
+            })
     </script>
 </head>
 <body>
