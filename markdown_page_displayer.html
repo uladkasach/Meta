@@ -64,6 +64,8 @@
             .then(()=>{
                 // make every image clickable: opening image in new tab (wrap image with anchor)
                 document.querySelectorAll("img").forEach((element)=>{
+                    // ensure parent node is not already an anchor
+                    if(element.parentNode.nodeName.toLowerCase() == "a") return;
                     var target = element;
                     var wrap = document.createElement("a");
                     wrap.href = target.src;
