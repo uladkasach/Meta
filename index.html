@@ -53,8 +53,9 @@
                     })
             })
             .then(()=>{
-                // ensure every anchor opens link in new tab
+                // ensure every anchor opens link in new tab if the target is not for this domain
                 document.querySelectorAll("a").forEach((element)=>{
+                    if(element.href.toLowerCase().indexOf("kasach.com") > -1 || element.href.toLowerCase().indexOf("meta.dev") > -1) return; // its our domain
                     element.target = "_blank";
                 });
             })
