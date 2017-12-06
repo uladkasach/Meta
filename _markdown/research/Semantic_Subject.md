@@ -1,4 +1,4 @@
-# Multi-Aspect Sentiment Analysis of Hotel Reviews
+# Classification of Words by Semantic Subject
 
 This project was conducted under the supervision of [Dr. Dundar][dundar_homepage] as an Independent Study project during the spring semester of 2017.
 
@@ -24,8 +24,28 @@ The project explored usage of both custom trained and pretrained wordvectors, ut
 Here is a TSNE plot of word vectors trained on 12.5 million words (click it and zoom in to see the semantic relationships encoded by word2vec):
 ![reference_image][tsne_words]
 
+The goal was to train a classifier which could predict whether a word was of a particular subject or not. In order to do this an extensive labeled dataset of subject related words was required. Since manually labeling 10k words was not feasible an approach of utilizing seed words and incrementally tuning the labeled dataset was utilized.
+
+A machine learning pipeline was created which facilitated conducting a grid search on a combination of data sampling techniques (as we were dealing with an imbalanced dataset), classification models, and hyperparameters for each model. After each gridsearch was conducted false positives and false negatives were manually evaluated; the words that were misclassified by the most models were considered first and assessed to determine whether the words were simply mislabeled. This iterative process resulted in a consistent increase in the prediction capability of the models.
+
+Here is the PR curve associated with the first and the last iteration respectively:
+
+![research_gif][first_iter] ![research_gif][second_iter]
+
+While this project had lots of room for improvement, in the end it was not further pursued as the impact that this work had the potential to make was insignificant. Instead, new topics were considered for future work.
+
+
+
 
 ## Take-Aways
+
+At a high level this project imparted significant lessons in machine learning research "project managment". These lessons included the ability to assess what scope of projects were achievable as well as what my first dive into how to find projects in machine learning that will generate an impact or would be more interesting.
+
+Through this project I learned countless machine learning techniques and methodologies, producing the first set of code that I would reuse in future projects for reference. I was able to utilize the common ML toolkits such as Tensorflow and Scikit and implemented proven algorithms such as SMOTE. The value of automating a machine learning pipeline for eventual gridsearching was also made clear.
+
+This project demonstrated the challenges of dealing with big data as well. The google news pretrained vectors were multiple gigabytes in size and required both special hardware and premeditated software descisions to efficiently deal with the mass. 
+
+
 [dundar_homepage]: https://cs.iupui.edu/~dundar/index.htm
 [codebase]: https://github.com/uladkasach/Word-Subject-Classification
 
@@ -34,3 +54,5 @@ Here is a TSNE plot of word vectors trained on 12.5 million words (click it and 
 
 
 [tsne_words]:  /_material/research/Semantic_Subject/tsne_12.5m_stop.png
+[first_iter]: /_material/research/Semantic_Subject/iteration_0_PR.png
+[second_iter]: /_material/research/Semantic_Subject/iteration_3_PR.png
