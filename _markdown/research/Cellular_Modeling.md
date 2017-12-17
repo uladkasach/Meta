@@ -1,4 +1,4 @@
-# Cellular Modeling
+# Hybrid CA Modeling of Cellular Dynamics and Metabolism
 
 This project was lead by [Dr. Moldovan][moldovan_home] and [Dr. Tovar][tovar_home] under a [MURI][muri_desc] grant. The research was spearheaded as part of T.J. Sego's PhD candidacy research. The project ran from August 2016 through May 2017.
 
