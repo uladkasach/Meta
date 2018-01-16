@@ -35,6 +35,13 @@
             ["/_markdown/research/covers/Semantic_Subject.md", "#Semantic_Subject"],
             ["/_markdown/research/covers/Automated_Essay_Scoring.md", "#Automated_Essay_Scoring"],
 
+            // entreprenurial_projects
+            ["/_markdown/entres/covers/BeachTimeAuctions.md", "#BeachTimeAuctions"],
+            ["/_markdown/entres/covers/CarlosOboe.md", "#CarlosOboe"],
+            ["/_markdown/entres/covers/ToughSTEM.md", "#ToughSTEM"],
+            ["/_markdown/entres/covers/SameLoop.md", "#SameLoop"],
+            ["/_markdown/entres/covers/Shipping.md", "#Shipping"],
+
             // other
             ["/_markdown/other/covers/Side_67_Reno.md", "#Side_67_Reno"],
             ["/_markdown/other/covers/Compubot_5000.md", "#Compubot_5000"],
@@ -57,7 +64,7 @@
             .then(()=>{
                 // ensure every anchor opens link in new tab if the target is not for this domain
                 document.querySelectorAll("a").forEach((element)=>{
-                    if(element.href.toLowerCase().indexOf("kasach.com") > -1 || element.href.toLowerCase().indexOf("meta.dev") > -1) return; // its our domain
+                    if(element.href.toLowerCase().indexOf("kasach.com") > -1 || element.href.toLowerCase().indexOf("meta.localhost") > -1) return; // its our domain
                     element.target = "_blank";
                 });
             })
@@ -128,6 +135,20 @@
         <a id = 'Cellular_Modeling' class = 'reseach_preview' ></a>
         <a id = 'Recycled_Filament' class = 'reseach_preview' ></a>
     </div>
+
+    <div style ='height:15px;'></div>
+    <div>
+        <h3>Entreprenurial Web Development:<h3>
+    </div>
+    <div style = 'margin-top:-25px;'></div>
+    <div class = 'content_carousel' style = 'font-size:18px;'>
+        <a id = 'Shipping' class = 'reseach_preview' ></a>
+        <a id = 'BeachTimeAuctions' class = 'reseach_preview' ></a>
+        <a id = 'SameLoop' class = 'reseach_preview' ></a>
+        <a id = 'ToughSTEM' class = 'reseach_preview' ></a>
+        <a id = 'CarlosOboe' class = 'reseach_preview' ></a>
+    </div>
+
 
 
     <div style ='height:15px;'></div>
